@@ -13,16 +13,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Oswald&family=Poppins:wght@100&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos.css">
     <title>Contacto</title>
 </head>
 
+
 <body>
     <header>
         <div>
-        <h1 class="loiano">Loiano</h1>
-        <h2 class="subtitulo">Telas & Obras</h2>
-    </div>
+            <h1 class="loiano">Loiano</h1>
+            <h2 class="subtitulo">Telas & Obras</h2>
+        </div>
         <nav>
             <ul class="barra">
                 <li>
@@ -42,21 +44,29 @@
                 </li>
             </ul>
         </nav>
-    </header>    <fieldset class="formulario">
-        <form action="" method="post" enctype="text/plain">
-            <label for="">Nombre/Empresa:</label>
-            <input type="">
-            <label for="">Correo:</label>
-            <input type=""><br>
-            <label for="">Celular:</label>
-            <input type="">
-            <label for="">Fecha limite de entrega:</label>
-            <input type=""><br>
-            <label for="">Explique detalladamente el trabajo a realizar:</label><br>
-            <textarea name="" id="" cols="38" rows="5"></textarea> <br>
-            <input type="submit" value="Enviar">
-
-    </fieldset>
+    </header>
+    <form class="formulario">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Nombre/Empresa</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Celular</label>
+                <input class="form-control" id="inputPassword4">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <label for="exampleFormControlTextarea1">Explique detalladamente el trabajo a realizar</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Suba sus archivos</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
     <footer class="footer">
         <a href="https://wa.me/541162732415" target="_blank">
@@ -73,6 +83,15 @@
         </a>
         <p class="horario">Lunes a Viernes 8:00 - 12:00 / 14:00 - 17:00</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
