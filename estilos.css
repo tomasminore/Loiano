@@ -32,6 +32,12 @@ header {
     text-shadow: -2px 2px 5px rgb(227, 227, 227);
 }
 
+.menu {
+    display: none;
+    font-size: 50px;
+    color: #d7d7d7;
+}
+
 .barra {
     height: 100%;
     display: flex;
@@ -54,9 +60,8 @@ nav ul li a {
 
 nav ul li a:hover {
     color: rgb(201, 49, 49);
-    transition: all 0.s;
+    transition: all 0.3s;
     text-shadow: 0px 0px 5px rgb(254, 254, 254);
-
 }
 
 main {
@@ -69,7 +74,6 @@ main {
     padding: 60px;
 }
 
-
 .call {
     color: white;
     font-size: 50px;
@@ -81,70 +85,39 @@ main {
     border: 5px solid black;
 }
 
-main div ul {
-    height: 100%;
-    width: 50%;
-}
-.carru{
-    height: 100px;
-}
-
-h4 {
-    font-size: 50px;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(153, 28, 28);
-    color: aliceblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.inicio {
-    width: 100%;
-    height: 310px;
-    background-color: aliceblue;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 200px;
-}
-
-.nleft {
-    width: 50%;
-    height: 450px;
-    padding: 20px;
-}
-
-.nright {
-    background-image: url(images/obras/gobierno\ 1.jpg);
-    background-repeat: no-repeat;
+.nosotros {
+    padding: 60px;
+    background-image: url(images/abstracto/historia1.jpg);
     background-position: center;
-    width: 50%;
-    height: 450px;
-}
-
-.nright h3 {
-    text-align: left;
-}
-
-.nright p {
-    font-weight: 100;
-}
-
-form input {
-    height: 25px;
-    width: 300px;
+    background-size: cover;
+    height: 720px;
 }
 
 .historia {
     font-style: italic;
     text-align: center;
-    font-size: 40px;
+    height: 100%;
+    font-size: 34px;
     padding: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: gray;
-    background-image: url(images/abstracto/historia1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: rgb(120, 119, 119);
+    border-radius: 5px;
+    border: 5px solid black;
+    background-color: rgba(0, 0, 0, 0.359);
+    transition: border 2s, color 5s, padding 2s;
+}
+.historia:hover{
+    color: white;
+    border: 5px solid red;
+    padding: 3px;
+}
+
+.servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px 200px 200px;
+    background-image: linear-gradient(225deg, #e70c0c 0%, #272627 65%);
+    padding: 20px;
 }
 
 .servicio {
@@ -158,22 +131,12 @@ form input {
 }
 
 .descripcion {
-    grid-row: 3/5;
-    grid-column: 3/6;
+    grid-row: 3/4;
+    grid-column: 2/7;
     text-align: center;
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
     color: white;
-
-}
-
-.servicios {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 100px 200px 200px;
-    background-color: #e70c0c;
-    background-image: linear-gradient(225deg, #e70c0c 0%, #272627 65%);
-    padding: 20px;
 }
 
 .ejemplo {
@@ -182,7 +145,7 @@ form input {
     background-repeat: no-repeat;
     border: 2px solid black;
     border-radius: 10px;
-    margin: 5px;
+    margin: 10px;
 }
 
 .sublimacion1 {
@@ -201,7 +164,6 @@ form input {
     background-image: url(images/banderas/bandera\ 3.jpeg);
     grid-row: 1/3;
     grid-column: 7/8;
-
 }
 
 .sublimacion4 {
@@ -215,7 +177,6 @@ form input {
     background-image: url(images/banderas/17264962_1383905514981656_8514349421130715322_n.jpg);
     grid-row: 4/5;
     grid-column: 1/2;
-
 }
 
 .sublimacion6 {
@@ -230,14 +191,12 @@ form input {
     grid-row: 4/5;
     grid-column: 5/7;
     background-position: 0px -90px;
-
 }
 
 .sublimacion8 {
     background-image: url(images/banderas/17309252_1383905528314988_8277338896790347320_n.jpg);
     grid-row: 3/5;
     grid-column: 7/8;
-
 }
 
 .sublimacion9 {
@@ -251,78 +210,73 @@ form input {
     background-image: url(images/diseño/diseño\ 1.jpg);
     grid-row: 3/5;
     grid-column: 1/2;
-
 }
 
 .diseño2 {
     background-image: url(images/diseño/diseño\ 2.jpg);
     grid-row: 1/3;
     grid-column: 1/2;
-
 }
 
 .diseño3 {
     background-image: url(images/diseño/diseño\ 3.jpg);
     grid-row: 1/3;
     grid-column: 7/8;
-
 }
 
 .diseño4 {
     background-image: url(images/diseño/diseño\ 4.jpg);
     grid-row: 1/2;
     grid-column: 2/5;
-
 }
 
 .diseño5 {
     background-image: url(images/diseño/diseño\ 5.jpg);
     grid-row: 1/2;
     grid-column: 5/7;
-
 }
 
 .diseño6 {
     background-image: url(images/diseño/diseño\ 6.jpg);
     grid-row: 4/5;
     grid-column: 2/4;
-
 }
 
 .diseño7 {
     background-image: url(images/diseño/diseño\ 7.jpg);
     grid-row: 4/5;
     grid-column: 4/7;
-
 }
 
 .diseño8 {
     background-image: url(images/diseño/diseño\ 8.jpg);
     grid-row: 3/5;
     grid-column: 7/8;
-
 }
-#corte1{
+
+.corte {
     grid-template-rows: 100px 200px 200px 200px;
-
 }
-#corte2{
+
+.corte1 {
     grid-row: 1/2;
     grid-column: 4/5;
 }
-#corte3{
+
+.corte2 {
     grid-row: 2/3;
-    grid-column: 3/6;
-    }
-.corte1 {
+    grid-column: 2/7;
+}
+
+.corte3 {
     grid-row: 3/5;
     grid-column: 1/4;
     width: 100%;
     height: 100%;
-background-color: black;
+    background-color: black;
 }
 
-.corte2 {
+.corte4 {
     grid-row: 3/5;
     grid-column: 5/8;
     width: 100%;
@@ -362,70 +316,59 @@ background-color: black;
     display: inline-block;
     border: 2px solid black;
     margin: 20px;
+    background-size: cover;
+    background-position: center;
 }
 
 .item1 {
     background-image: url(./images/Bandera\ 1.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .item2 {
     background-image: url(./images/BAndera\ 2.jpeg);
-    background-size: cover;
-    background-position: center;
 }
 
 .item3 {
     background-image: url(./images/bandera\ 3.jpeg);
-    background-size: cover;
-    background-position: center;
 }
 
 .item4 {
     background-image: url(./images/bandera\ 4.jpeg);
-    background-size: cover;
-    background-position: center;
 }
 
 .item5 {
     background-image: url(./images/stand\ 1.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .item6 {
     background-image: url(./images/stand\ 2.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .item7 {
     background-image: url(./images/stand\ 3.jpg );
-    background-size: cover;
-    background-position: center;
 }
 
 .item8 {
     background-image: url(./images/gobierno\ 1.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
+.formulario {
+    padding: 15px;
+    border: 10px rgb(244, 73, 73) inset;
+}
 
 footer {
     width: 100%;
-    background-color: #363535a5;
+    background-color: #363535;
     text-align: center;
     padding-bottom: 10px;
-    line-height: 35px;
 }
 
 .horario {
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
+    color: white;
 }
 
 footer i {
@@ -450,89 +393,164 @@ footer i {
     color: rgb(255, 130, 84);
 }
 
-.formulario {
-    padding: 15px;
-    border: 10px rgb(244, 73, 73) inset;
-}
-
-@media only screen and (min-width:320px) and (max-width:767px) {
+@media only screen and (min-width:320px) and (max-width:479px) {
     header {
+        grid-template-columns: 80% 20%;
+    }
+
+    .loiano {
         font-size: 30px;
-    }
-
-    header h2 {
-        font-size: 35px;
-    }
-
-    .titulo {
         padding-left: 20px;
     }
 
-    main {
-        height: 300px;
-        background-position: right;
+    .subtitulo {
+        width: 200px;
+        font-size: 20px;
+        padding-left: 20px;
     }
 
-    .call {
-        color: white;
-        width: 50%;
-        height: 280px;
-        padding: 10px;
-        margin: 15px;
-        overflow: auto;
+    .menu {
+        display: flex;
+        padding-top: 15px;
+        font-size: 40px;
     }
 
-    .call p {
-        margin-bottom: 15px;
+    .barra {
+        display: none;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
         font-size: 15px;
     }
+    .nosotros {
+        padding: 20px;
+        background-image: url(images/abstracto/historia2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .historia {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
 
-    h4 {
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 30px 120px 100px;
+    }
+
+    .servicio {
+        grid-row: 2/3;
+        grid-column: 2/5;
         font-size: 25px;
     }
 
-    .inicio {
-        width: 100%;
-        height: 700px;
-        flex-wrap: wrap;
+    .descripcion {
+        grid-row: 3/4;
+        grid-column: 2/5;
+        font-size: 10px;
     }
 
-    .nleft {
+    .ejemplo {
         background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-
+        background-size: cover;
+        margin: 5px;
     }
 
-    .nright {
-        background-color: brown;
-        width: 100%;
-        height: 450px;
+    .sublimacion1 {
+        grid-column: 2/4;
     }
 
-    footer p {
-        font-size: 12px;
+    .sublimacion2 {
+        grid-column: 5/4;
+    }
+
+    .sublimacion3 {
+        grid-column: 5/6;
+        grid-row: 1/3;
+    }
+
+    .sublimacion4 {
+        grid-column: 1/2;
+        background-position: -70px;
+    }
+
+    .sublimacion5 {
+        grid-column: 1/2;
+    }
+
+    .sublimacion6 {
+        grid-column: 2/4;
+    }
+
+    .sublimacion7 {
+        display: none;
+    }
+
+    .sublimacion8 {
+        grid-column: 5/6;
+    }
+
+    .sublimacion9 {
+        grid-column: 4/5;
+    }
+
+    .diseño3 {
+        display: none;
+    }
+
+    .diseño4 {
+        grid-column: 2/4;
+    }
+
+    .diseño5 {
+        grid-column: 4/6;
+    }
+
+    .diseño7 {
+        grid-column: 4/6;
+    }
+
+    .diseño8 {
+        grid-row: 2/4;
+        grid-column: 5/6;
+    }
+
+    .corte {
+        grid-template-rows: 30px 90px 80px;
+        grid-template-columns: repeat(7fr);
+    }
+
+    .corte1 {
+        grid-row: 1/2;
+    }
+
+    .corte2 {
+        grid-row: 2/3;
+        grid-column: 1/7;
+    }
+
+    .corte3 {
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+
+    .corte4 {
+        grid-row: 3/4;
+        grid-column: 4/6;
+    }
+
+    .horario {
+        font-size: 15px;
     }
 
     footer i {
-        font-size: 20px;
-
+        font-size: 25px;
+        padding: 10px;
     }
 
-    .realizados {
-        width: 100px;
-        font-size: 20px;
-    }
 
-    .item {
-        height: 250px;
-        width: 250px;
-        display: inline-block;
-        border: 2px solid black;
-        margin: 20px;
-    }
-
-    .formulario {
-        font-size: 20px;
-    }
 }
