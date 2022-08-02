@@ -13,7 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Oswald&family=Poppins:wght@100&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Contacto</title>
 </head>
 
@@ -24,6 +26,7 @@
             <h1 class="loiano">Loiano</h1>
             <h2 class="subtitulo">Telas & Obras</h2>
         </div>
+        <!-- barra de navegacion -->
         <nav>
             <i class="fa-solid fa-bars menu"></i>
             <ul class="barra">
@@ -37,25 +40,38 @@
                     <a href="Servicios.html">Servicios</a>
                 </li>
                 <li>
-                    <a href="Trabajos realizados.html">Trabajos realizados</a>
+                    <a href="TrabajosRealizados.html">Trabajos realizados</a>
                 </li>
                 <li>
                     <a href="Contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
+        <!-- fin barra de navegacion -->
     </header>
-    <form class="formulario" action="">
-        <label for="">Nombre/Empresa</label>
-        <input type="text">
-        <label for="">Celular</label>
-        <input type="text">
-        <label for="">Email</label>
-        <input type="text">
-        <label for="">Explique detalladamente el trabajo</label>
-        <input type="text">
-        <label for="">Suba sus archivos</label>
-        <input type="text">
+    <form class="formulario">
+        <div class="row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4" class="campo">Nombre/Empresa</label>
+                <input type="email" class="form-control marco" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEmail4" class="campo">Celular</label>
+                <input type="email" class="form-control marco" id="inputEmail4">
+            </div>
+        </div>
+            <div class="form-group col-md-13">
+                <label for="inputEmail4" class="campo">Email</label>
+                <input type="email" class="form-control marco" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="campo">Explique detalladamente el trabajo</label>
+            <textarea class="form-control marco" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlFile1" class="campo">Suba sus archivos</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
     </form>
     <footer class="footer">
         <a href="https://wa.me/541162732415" target="_blank">

@@ -1,0 +1,26 @@
+.nosotros {
+    padding: 60px;
+    background-image: url(../../../images/abstracto/historia1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 720px;
+}
+
+.historia {
+    font-style: italic;
+    text-align: center;
+    height: 100%;
+    font-size: 34px;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(120, 119, 119);
+    border-radius: 5px;
+    border: 5px solid black;
+    background-color: rgba(0, 0, 0, 0.359);
+    transition: border 2s, color 5s, padding 2s;
+}
+.historia:hover{
+    color: white;
+    border: 5px solid $red1;
+    padding: 3px;
+}

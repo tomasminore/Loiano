@@ -1,0 +1,16 @@
+.trabajos {
+    font-family: $tipografia2;
+    font-size: 40px;
+    text-align: center;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+    background: $gradiante1;
+    margin-bottom: 0;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px;
+}

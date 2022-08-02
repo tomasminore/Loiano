@@ -1,0 +1,35 @@
+footer {
+    width: 100%;
+    background-color: #363535;
+    text-align: center;
+    padding-bottom: 10px;
+
+    .horario {
+        font-size: 30px;
+        font-family: $tipografia1;
+        font-weight: bolder;
+        color: white;
+    }
+
+    i {
+        font-size: 50px;
+        padding: 15px;
+        color: aliceblue;
+    }
+
+    .facebook:hover {
+        color: rgb(84, 175, 221);
+    }
+
+    .map:hover {
+        color: rgb(179, 50, 50);
+    }
+
+    .whatsapp:hover {
+        color: rgb(54, 222, 54);
+    }
+
+    .instagram:hover {
+        color: rgb(255, 130, 84);
+    }
+}
